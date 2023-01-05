@@ -1,0 +1,190 @@
+
+
+/*-----------------------global styles---------------------*/
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+/*---------------------------nav------------------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: black;
+}
+
+@media (min-width: 440px) {
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/*--------------------------header only----------------------*/
+header {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+header h1 header h2 {
+    color: greenyellow;
+}
+
+.content-warp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+@media (min-width: 935px) {
+    .content-warp {
+        flex-direction: row;
+    }
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 440px) {
+    .profile-img {
+        width: auto;
+        height: 400px;
+    }
+}
+
+@media (min-width: 935px) {
+    .profile-img {
+        width: auto;
+        height: 500px;
+    }
+}
+
+/*--------------------------work section----------------------*/
+.job-row {
+    display: flex;
+}
+
+.work-experience {
+    padding-top: 40px;
+    background-color: white;
+}
+
+.work-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.job-wrapper {
+    display: block;
+    padding-bottom: 30px;
+    width: 30%;
+}
+
+@media (min-width: 935px) {
+    .job-wrapper {
+        /* display: grid; */
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+
+@media (min-width: 935px) {
+    .job-description p:first-of-type {
+        margin-top: 0;
+    }
+}
+
+/*--------------------------education section----------------------*/
+.education {
+    padding: 100px;
+    background-image: url(./assets/education-background.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+
+.education-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+/*-------------------------- footer ----------------------*/
+
+footer {
+    text-align: center;
+    background-color:;
+    color: white;
+}
+
+.content-warp {
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 900px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin-top: 50px;
+}
